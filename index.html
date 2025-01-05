@@ -17,9 +17,9 @@
       color: white;
       display: flex;
       align-items: center;
-      overflow: hidden; /* Hide scrollbars */
+      overflow: hidden;
       justify-content: center;
-      height: 100vh; /* Viewport height */
+      height: 100vh;
       margin: 0;
     }
    
@@ -33,7 +33,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 2; /* High z-index to ensure it's above other elements */
+      z-index: 2;
     }
     
   
@@ -86,9 +86,9 @@
       position: relative;
       background-color:rgba(0, 0, 0, 0.685);
       padding: 20px;
-      border-radius: 15px; /* Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect */
-      max-width: 340px; /* Maximum width */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      max-width: 340px;
       width: 100%;
       border: solid;
       border-color:#313030;
@@ -117,17 +117,17 @@
     }
     .social-icons li a {
       color: white;
-      text-decoration: none; /* Remove underline from links */
+      text-decoration: none;
     }
     .social-icons li a:hover {
-      text-decoration: underline; /* Adds an underline on hover */
+      text-decoration: underline;
     }
     .ip-display {
       margin-top: 20px;
     }
     .website-link {
       position: absolute;
-      bottom: -30px; /* Adjust as needed */
+      bottom: -30px;
       left: 50%;
       transform: translateX(-50%);
       width: auto;
@@ -177,7 +177,6 @@
     </div>
     <ul class="social-icons">
     
-      <!-- Replace # with the actual links -->
 
       <li><a href="https://discord.com/users/1115437863736201346" target="_blank"><i class="fab fa-discord"></i></a></li>
       <li><a href="https://www.youtube.com/@DevBuiltThis" target="_blank"><i class="fab fa-youtube"></i></a></li>
@@ -188,15 +187,13 @@
     </ul>
   
     <div class="line"></div>
-    <div class="ip-display">
-      <!-- IP display logic will go here. But remember, this requires server-side scripting. -->
+    <div class="ip-display">  <!-- it was a test OK? don't sue me lua -->
       <p>https://galaxyteam.us.kg</p> <span id="user-ip"></span>
     </div>
     <div class="website-link"></div>
     </div>
   
   
-  <!-- fonts -->
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -211,26 +208,20 @@
   
 
   <script>
-    // JavaScript to handle the click event on the overlay
     const overlay = document.getElementById('overlay');
     overlay.addEventListener('click', function() {
-      // Play the music
       const audio = document.getElementById('background-music');
       audio.play();
       
-      // Add the fade-out class to trigger the fade-out animation
       this.classList.add('fade-out');
-      
-      // Remove the overlay from the DOM after the animation ends
       setTimeout(() => {
         overlay.remove();
-      }, 1000); // Corresponds to the animation duration
+      }, 1000);
     });
   </script>
   
   
   <script type="text/javascript">
-    // <![CDATA[
     var colour = "#ffffff";
     var sparkles = 120;
   
@@ -409,11 +400,9 @@
   div.style.backgroundColor = colour;
   return div;
   }
-  // ]]>
   </script>
   
   
-  <!--everything below is now essential, everything up was sparkles-->
 
   
   <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
@@ -441,7 +430,3 @@
   
     animateTitle();
   </script>
-
-
-  <!--Traced was here, make sure you stay on the grind and focus on your goals!-->
-  <!--Traced was here, treat people like you want to be treated!-->
